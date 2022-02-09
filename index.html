@@ -8,17 +8,17 @@
     
     <h4>Favourate place to buy food is :Hyderabad</h4>
 
-<p> The famous Places for Shopping.The visiting places in hyderabad include<b> Husain sagar,nagarjunasagar dam,golconda.</b>
+    <p> The famous Places for Shopping.The visiting places in hyderabad include<b> Husain sagar,nagarjunasagar dam,golconda.</b>
     This place is ruled by Navab Sultans.The Famous Construction<b> CHARMINAR built by KULI KUTHUB SHAH</b> has become known globally as a symbol of Hyderabad and is listed among the most recognised structures in India
     
-</p>
+    </p>
 
 <hr>
 
-<h1>Route Map to Airport</h1>
+  <h1>Route Map to Airport</h1>
 
-The closest airport to hyderabad paradise is Rajiv Gandhi International Airport.</br>
-Steps to reach airport:
+    The closest airport to hyderabad paradise is Rajiv Gandhi International Airport.</br>
+    Steps to reach airport:
     <ol type = "1">
         <li>The distance between Hyderabad Airport to paradise biryani Hyderabad is 8 Km by road.
            So travel by bus or cab
@@ -44,7 +44,61 @@ Steps to reach airport:
            </ul>  
     </ul>
        
-   [Link to AboutMe]
-    (https://github.com/44-563-Web-Apps-S22/webapps-s22-assignment-3-ushareddypati/blob/main/aboutme.html)
-    </body>
+<a href="aboutme.html">link to aboutme</a>
+
+<hr>
+
+<h3 style="color:green;">Tables creation</h3>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>kabaddi</td>
+        <td>INDIA</td>
+        <td>$100</td>
+        
+    </tr>
+    <tr>
+        <td>Chess</td>
+        <td>RUSSIA</td>
+        <td>$120</td>
+    </tr>
+    <tr>
+        <td>Longjump</td>
+        <td>TOKYO</td>
+        <td>$105</td>
+    </tr>
+    <tr>
+        <td>cricket</td>
+        <td>JAPAN</td>
+        <td>$215</td>
+    </tr>
+</table>
+
+<hr>
+
+<h3 style="color: blueviolet;">String Processing</h3>
+<p>A string datatype is a datatype modeled on the idea of a formal string. Strings are such an important and useful datatype that they are implemented in nearly every programming language. 
+    In some languages they are available as primitive types and in others as composite types. The syntax of most high-level programming languages allows for a string, usually quoted in some way, to represent an instance of a string datatype</p>
+<a href="https://cp-algorithms.com/index.html#data-structures">link to string processing algorithm</a>
+<pre>
+long long compute_hash(string const& s) {
+    const int p = 31;
+    const int m = 1e9 + 9;
+    long long hash_value = 0;
+    long long p_pow = 1;
+    for (char c : s) {
+        hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
+        p_pow = (p_pow * p) % m;
+    }
+    return hash_value;
+}
+</pre>
+
+
+
+ </body>
 </html>
